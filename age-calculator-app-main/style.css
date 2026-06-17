@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #D8D8D8;
+}
+
+
+.dob-box{
+    position: relative;
+    padding: 30px;
+    height: 60vh;
+    width: 40vw;
+    background-color: #E5E5E5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.224);
+    border-radius: 20px 20px 90px 20px;
+}
+
+.date-box{
+    display: flex;
+ gap: 10px;
+    
+}
+
+.field label {
+    display: flex;
+       flex-direction: column;
+       font-size: 10px;
+       font-weight: 700;
+       opacity: 60%;
+       margin-bottom: 5px;
+}
+.field input {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.635);
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+   padding: 20px;
+     background-color: #E5E5E5;
+     outline: none;
+
+    
+}
+.error{
+     visibility: hidden;
+    color: red;
+    font-style: italic;
+    font-size: 10px;
+    margin:5px 0 15px 0;
+    width: 100%;
+}
+.field input ::placeholder {
+   
+    font-size: 25px;
+    font-weight: 700;
+   padding: 20px;
+   
+  
+    
+}
+
+.icon{
+    position: absolute;
+    right: 15px;
+    top: 90px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: textfield;
+}
+
+.active{
+   background-color: rgb(69, 69, 147);
+}
+.icon img{
+   padding: 10px;
+  height: 60px;
+    width: 60px;
+}
+/* .age{
+gap: 10px;
+} */
+
+.DOB2{
+     font-style: italic;
+   font-size: 70px;
+   height: 60px;
+    font-weight: 800;
+}
+.DOB2 span{
+  margin-right: 10px;
+  font-size: 80px;
+  color: rgb(73, 73, 227);
+}
+
+@media screen and (max-width:767px){
+    .dob-box{
+    position: relative;
+    padding: 30px;
+    max-height: 380px;
+    width: 90vw;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.224);
+    border-radius: 20px 20px 90px 20px;
+}
+
+
+.field label {
+    display: flex;
+       flex-direction: column;
+       font-size: 10px;
+       font-weight: 700;
+       opacity: 60%;
+       margin-bottom: 5px;
+}
+.field input {
+    height: 5px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.635);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+   padding: 15px;
+     background-color: #E5E5E5;
+     outline: none;
+
+    
+}
+
+.DOB2{
+     font-style: italic;
+   font-size: 40px;
+   max-height: 80px;
+    font-weight: 800;
+}
+.DOB2 span{
+  margin-right: 10px;
+  font-size: 60px;
+  color: rgb(73, 73, 227);
+}
+
+
+.error{
+     visibility: hidden;
+    color: red;
+    font-style: italic;
+    font-size: 8px;
+    margin:5px 0 15px 0;
+    width: 100%;
+}
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .dob-box{
+    position: relative;
+    padding: 30px;
+    max-height: 500px;
+    width: 600px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.224);
+    border-radius: 20px 20px 90px 20px;
+}
+
+
+.field label {
+    display: flex;
+       flex-direction: column;
+       font-size: 15px;
+       font-weight: 700;
+       opacity: 60%;
+       margin-bottom: 5px;
+}
+.field input {
+    height: 50px;
+    width: 140px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.635);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+   padding: 15px;
+     background-color: #E5E5E5;
+     outline: none;
+
+    
+}
+
+.DOB2{
+     font-style: italic;
+   font-size: 100px;
+   max-height: 150px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+.DOB2 span{
+  margin-right: 10px;
+  font-size: 110px;
+  color: rgb(73, 73, 227);
+}
+
+
+.error{
+     visibility: hidden;
+    color: red;
+    font-style: italic;
+    font-size: 8px;
+    margin:5px 0 15px 0;
+    width: 100%;
+}
+
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1266px){
+    .dob-box{
+    position: relative;
+    padding: 30px;
+    max-height: 500px;
+    width: 600px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.224);
+    border-radius: 20px 20px 90px 20px;
+}
+
+
+.field label {
+    display: flex;
+       flex-direction: column;
+       font-size: 15px;
+       font-weight: 700;
+       opacity: 60%;
+       margin-bottom: 5px;
+}
+.field input {
+    height: 50px;
+    width: 140px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.635);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+   padding: 15px;
+     background-color: #E5E5E5;
+     outline: none;
+
+    
+}
+
+.DOB2{
+     font-style: italic;
+   font-size: 100px;
+   max-height: 150px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+.DOB2 span{
+  margin-right: 10px;
+  font-size: 110px;
+  color: rgb(73, 73, 227);
+}
+
+
+.error{
+     visibility: hidden;
+    color: red;
+    font-style: italic;
+    font-size: 8px;
+    margin:5px 0 15px 0;
+    width: 100%;
+}
+
+}
