@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1: Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="weather-box">
+            <h1>Day 1: Weather App</h1>
+
+            <p>Fetch real-time weather for any city using an API (OpenWeatherMap).</p>
+
+            <div id="input-search">
+
+                <input  id="city-name" type="text" placeholder="Enter city (e.g.London)">
+
+                <button id="Search">Search</button>
+                <br>
+                <label for="city-name">Enter a city and press Search.</label>
+
+            </div>
+            <!-- box 2 -->
+            <div class="weather-box2">
+                <h1 id="city">Sambhal,--</h1>
+                <br>
+                <p>Clear Sky - <span id="time">03.00 PM</span></p>
+                <h1 id="temp">39&#176C</h1>
+
+
+                <div class="details">
+                    <div class="row1">
+                        <div class="Humidity">Humidity: <span id="hum">20%</span></div>
+                        <div class="Sunrise">Sunrise: <span id="sunrise">---</span></div>
+                    </div>
+                    <div class="row2">
+                        <div class="Wind">
+                            Wind: <span id="wind">4.73 m/s</span></div>
+                        <div class="Sunset">Sunset: <span id="sunset2">---</span></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- last -->
+            <div class="title">
+                <i id="icon" class="ri-arrow-right-s-fill"></i>
+                <span id="works">How it works (short)</span>
+            </div>
+            <p id="work">`script.js` builds the API URL, fetches the current weather JSON, extracts relevant fields and
+                updates the DOM. It uses `async/await`, handles common errors, and formats times using the timezone
+                offset returned by the API.</p>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
