@@ -1,0 +1,28 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ html, body{
+       padding: 20px;
+     width: 100%;
+     height: 100%;
+     display: flex;
+ }
+
+ .data{
+   
+margin-left: 10px;
+    height: 20px;
+    width: 200px;
+    border: 1px solid black;
+   
+ }
+
+ button{
+
+    height: 20px;
+    width: 50px;
+    margin-left: 10px;
+ }
