@@ -504,7 +504,7 @@ button:hover {
    BUTTON
 =========================== */
 
-#btn{
+.btn{
   position: relative;
 
   width: 100%;
@@ -527,7 +527,7 @@ button:hover {
   transition: .4s;
 }
 
-#btn::before{
+.btn::before{
   content:"";
 
   position:absolute;
@@ -548,11 +548,11 @@ button:hover {
   transition:.8s;
 }
 
-#btn:hover::before{
+.btn:hover::before{
   left:100%;
 }
 
-#btn:hover{
+.btn:hover{
   background:#9af08d;
 
   transform: translateY(-3px);
