@@ -263,7 +263,7 @@ button:hover {
 }
 
 #heading::before {
-  content: "MY PROJECT";
+  content: "MY PROJECTS";
   position: absolute;
   inset: 0;
 
